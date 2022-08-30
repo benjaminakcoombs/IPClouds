@@ -1,0 +1,1475 @@
+/var/spool/slurm/d/job56906/slurm_script: line 7: /vol/cuda/11.0.3-cudnn8.0.5.39/setup.sh: No such file or directory
+Wed Jul 20 09:27:25 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.129.06   Driver Version: 470.129.06   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla T4            Off  | 00000000:00:06.0 Off |                    0 |
+| N/A   36C    P8     9W /  70W |      0MiB / 15109MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla T4            Off  | 00000000:00:07.0 Off |                    0 |
+| N/A   29C    P8     9W /  70W |      0MiB / 15109MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+http://www.sp.ph.ic.ac.uk/~erg10/safe/timelapse/videos//2022-05-12/tl_2022-05-12_13A.mp4
+****Connected****
+Downloading.....
+Done
+http://www.sp.ph.ic.ac.uk/~erg10/safe/timelapse/videos//2022-05-12/tl4_2022-05-12_13A.mp4
+****Connected****
+Downloading.....
+Done
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  True
+New directory created
+Read a new frame:  False
+Traceback (most recent call last):
+  File "/vol/bitbucket/bac21/steak-generation/ip/Support/DataCollection/videos/data_collection.py", line 226, in <module>
+    mask = create_mask(image, file[14])
+  File "/vol/bitbucket/bac21/steak-generation/ip/Support/DataCollection/videos/data_collection.py", line 153, in create_mask
+    cv2.grabCut(img, mask, rect, bgdModel, fgdModel, 5, cv2.GC_INIT_WITH_RECT)
+cv2.error: OpenCV(4.6.0) /io/opencv/modules/imgproc/src/grabcut.cpp:386: error: (-215:Assertion failed) !bgdSamples.empty() && !fgdSamples.empty() in function 'initGMMs'
+
+ 13:11:11 up 1 day,  3:49,  2 users,  load average: 1.02, 1.08, 1.17
