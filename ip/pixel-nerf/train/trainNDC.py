@@ -120,7 +120,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
 
         SB, NV, _, H, W = all_images.shape
         all_poses = data["poses"].to(device=device)  # (SB, NV, 4, 4)
-        all_bboxes = data.get("bbox")  # (SB, NV, 4)  cmin rmin cmax rmax
+        all_bboxes = None #data.get("bbox")  # (SB, NV, 4)  cmin rmin cmax rmax
         all_focals = data["focal"]  # (SB)
         all_c = data.get("c")  # (SB)
 
@@ -156,7 +156,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
             images_0to1 = images * 0.5 + 0.5
 
             cam_rays = util.gen_rays(
-                poses, W, H, focal, self.z_near, self.z_far, c=c, ndc=True, 
+                poses, W, H, focal, self.z_near, self.z_far, c=c, ndc=True
             )  # (NV, H, W, 8)
             rgb_gt_all = images_0to1
             rgb_gt_all = (
