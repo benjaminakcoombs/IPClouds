@@ -270,7 +270,6 @@ def gen_rays(poses, width, height, focal, z_near, z_far, c=None, ndc=False):
     Generate camera rays
     :return (B, H, W, 8)
     """
-    ndc = True
     num_images = poses.shape[0]
     device = poses.device
     cam_unproj_map = (
@@ -279,6 +278,7 @@ def gen_rays(poses, width, height, focal, z_near, z_far, c=None, ndc=False):
         .repeat(num_images, 1, 1, 1)
     )
     cam_centers = poses[:, None, None, :3, 3].expand(-1, height, width, -1)
+    print("CC",cam_centers)
     cam_raydir = torch.matmul(
         poses[:, None, None, :3, :3], cam_unproj_map.unsqueeze(-1)
     )[:, :, :, :, 0]
@@ -292,7 +292,7 @@ def gen_rays(poses, width, height, focal, z_near, z_far, c=None, ndc=False):
 #            width, height, focal, 1.0, cam_centers, cam_raydir
 #        )
         cam_centers, cam_raydir = ndc_rays(
-            height, width, focal, 10, cam_centers, cam_raydir, device = device #10, 
+            height, width, focal, 10.0, cam_centers, cam_raydir #10
         )
 
     cam_nears = (
@@ -573,17 +573,11 @@ def get_module(net):
 
 
 
-def ndc_rays(H, W, focal,  near, rays_o, rays_d, device):
+def ndc_rays(H, W, focal, near, rays_o, rays_d):
+    focal = focal.item()
     # Shift ray origins to near plane
-    rays_o.to(device)
-    rays_d.to(rays_o.device)
-    focal = focal.item() #torch.Tensor(focal.item(), device = rays_o.device)
     t = -(near + rays_o[...,2]) / rays_d[...,2]
     rays_o = rays_o + t[...,None] * rays_d
-    print("Devices")
-    print(rays_o.device)
-    print(rays_d.device)
-#    print(focal.device)
     
     # Projection
     o0 = -1./(W/(2.*focal)) * rays_o[...,0] / rays_o[...,2]
