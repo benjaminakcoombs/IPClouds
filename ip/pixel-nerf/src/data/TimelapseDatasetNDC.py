@@ -21,10 +21,11 @@ class TimelapseDatasetNDC(torch.utils.data.Dataset):
         :param world_scale amount to scale entire world by
         """
         super().__init__()
-        if (path[-2] == 'r'):
-            self.base_path = os.path.join(path, "fullRender", "final", "fullRender") + "_" + stage
-        elif (path[-1] == 'e'):
-            self.base_path = os.path.join(path, "timelapse") + "_" + stage
+        self.base_path = os.path.join(path, "fullRender", "final", "fullRender") + "_" + stage
+#        if (path[-2] == 'r'):
+#            self.base_path = os.path.join(path, "fullRender", "final", "fullRender") + "_" + stage
+#        elif (path[-1] == 'e'):
+#            self.base_path = os.path.join(path, "timelapse") + "_" + stage
         self.dataset_name = os.path.basename(path)
 
         print("Loading SRN dataset", self.base_path, "name:", self.dataset_name)
