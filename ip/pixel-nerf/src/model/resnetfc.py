@@ -127,8 +127,8 @@ class ResnetFC(nn.Module):
         if beta > 0:
             self.activation = nn.Softplus(beta=beta)
         else:
-            #self.activation = nn.Sigmoid()
-            self.activation = nn.ReLU()
+            self.activation = nn.Sigmoid()
+            #self.activation = nn.ReLU()
 
     def forward(self, zx, combine_inner_dims=(1,), combine_index=None, dim_size=None):
         """
