@@ -1,0 +1,36 @@
+Use of PixelNeRF / ReLU Fields clouds work:
+
+This project was run using Slurm GPU
+
+
+PixelNeRF:
+To adjust Sigmoid function, go to pixel-nerf->src->model->resnetfc->Line130 & shift commenting out ReLU to Sigmoid
+
+
+Terragun:
+  Regular:
+    python3 ..../IP/ip/pixel-nerf/train/train.py -n fullRender -c ..../IP/ip/pixel-nerf/conf/exp/fullRender.conf -D ..../IP/fullRender/fullRender/final/fullRender -V 1
+
+  NDC:
+    python3 ..../IP/ip/pixel-nerf/train/trainNDC.py -n fullRenderNDC -c ..../IP/ip/pixel-nerf/conf/exp/fullRender.conf -D ..../IP/fullRender/ -V 1
+    
+
+Timelapse:
+  Regular:
+    python3 ..../IP/ip/pixel-nerf/train/trainNDC.py -n timelapseNDC -c ..../IP/ip/pixel-nerf/conf/exp/fullRender.conf -D ..../IP/timelapse -V 1
+  NDC & Mask:
+    python3 ..../IP/ip/pixel-nerf/train/trainMask.py -n timelapseMask -c ..../IP/ip/pixel-nerf/conf/exp/fullRenderMask.conf -D ..../IP/timelapse/timelapse -V 1
+  
+ReLU Fields:
+  Triangle:
+    python3 ..../IP/relu_fields/train_sh_based_voxel_grid_with_posed_images.py -d ..../IP/relu_fields/data/triangle -o ..../IP/relu_fields/logs/rf/triangle/
+    python3 ..../IP/relu_fields/render_sh_based_voxel_grid.py -i ..../IP/relu_fields/logs/rf/triangle/saved_models/model_final.pth -o ..../IP/relu_fields/output/multiview_cloud/triangle
+
+  Ring:
+    python3 ..../IP/relu_fields/train_sh_based_voxel_grid_with_posed_images.py -d ..../IP/relu_fields/data/ring -o ..../IP/relu_fields/logs/rf/ring/
+    python3 ..../IP/relu_fields/render_sh_based_voxel_grid.py -i ..../IP/relu_fields/logs/rf/ring/saved_models/model_final.pth -o ..../IP/relu_fields/output/multiview_cloud/ring
+
+
+
+
+
