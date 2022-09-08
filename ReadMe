@@ -1,6 +1,7 @@
 Use of PixelNeRF / ReLU Fields clouds work:
 
 This project was run using Slurm GPU
+Current fullRender dataset w/ exr files: https://drive.google.com/drive/folders/1ZGOQI5BKwWpUvIXkLKw-cyeSNXd3CjBu?usp=sharing
 
 
 PixelNeRF:
