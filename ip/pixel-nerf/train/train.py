@@ -236,8 +236,8 @@ class PixelNeRFTrainer(trainlib.Trainer):
         images = data["images"][batch_idx].to(device=device)  # (NV, 3, H, W)
         poses = data["poses"][batch_idx].to(device=device)  # (NV, 4, 4)
         focal = data["focal"][batch_idx : batch_idx + 1]  # (1)
-        for i in range(len(poses)):
-            poses[i][:3, 3] = poses[i][:3, 3] / 50
+#        for i in range(len(poses)):
+#            poses[i][:3, 3] = poses[i][:3, 3] / 50
         c = data.get("c")
         if c is not None:
             c = c[batch_idx : batch_idx + 1]  # (1)

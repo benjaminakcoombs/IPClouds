@@ -6,11 +6,12 @@ from .SRNDataset import SRNDataset
 from .TimelapseDataset import TimelapseDataset
 from .TimelapseDatasetMask import TimelapseDatasetMask
 from .TimelapseDatasetNDC import TimelapseDatasetNDC
+from .TimelapseDatasetEXR import TimelapseDatasetEXR
 
 from .data_util import ColorJitterDataset
 
 
-def get_split_dataset(dataset_type, datadir, want_split="all", training=True, ndc = False, **kwargs):
+def get_split_dataset(dataset_type, datadir, want_split="all", training=True, ndc = False, exr = False, **kwargs):
     """
     Retrieved desired dataset class
     :param dataset_type dataset type name (srn|dvr|dvr_gen, etc)
@@ -38,6 +39,8 @@ def get_split_dataset(dataset_type, datadir, want_split="all", training=True, nd
         flags["image_size"] = (480, 640)
 #        flags["world_scale"] = world_scale
         # Apply color jitter during train
+        if exr:
+            dset_class = TimelapseDatasetEXR
 
     elif dataset_type == "timelapse_mask" or dataset_type == "fullRender_mask":
         # For ShapeNet 64x64

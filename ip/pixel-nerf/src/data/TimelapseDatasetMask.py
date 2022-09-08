@@ -48,8 +48,8 @@ class TimelapseDatasetMask(torch.utils.data.Dataset):
             torch.tensor([1, -1, -1, 1], dtype=torch.float32)
         )
 
-        self.z_near = 0
-        self.z_far = 1
+        self.z_near = 0.1
+        self.z_far = 1.0
         self.lindisp = False
 
     def __len__(self):
@@ -86,7 +86,7 @@ class TimelapseDatasetMask(torch.utils.data.Dataset):
             pose = torch.from_numpy(
                 np.loadtxt(pose_path, dtype=np.float32).reshape(4, 4)
             )
-            pose[:3, 3] = pose[:3, 3] / 350
+            pose[:3, 3] = pose[:3, 3] / 10000
             pose = pose @ self._coord_trans
 
             bbox = []

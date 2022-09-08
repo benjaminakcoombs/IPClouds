@@ -155,9 +155,9 @@ class Trainer:
         progress = tqdm.tqdm(bar_format="[{rate_fmt}] ")
         for epoch in range(self.num_epochs):
             start = time.time()
-            self.writer.add_scalar(
-                "lr", self.optim.param_groups[0]["lr"], global_step=step_id
-            )
+#            self.writer.add_scalar(
+#                "lr", self.optim.param_groups[0]["lr"], global_step=step_id
+#            )
 
             batch = 0
             for _ in range(self.num_epoch_repeats):
@@ -182,10 +182,10 @@ class Trainer:
                             test_losses = self.eval_step(test_data, global_step=step_id)
                         self.net.train()
                         test_loss_str = fmt_loss_str(test_losses)
-                        self.writer.add_scalars("train", losses, global_step=step_id)
-                        self.writer.add_scalars(
-                            "test", test_losses, global_step=step_id
-                        )
+#                        self.writer.add_scalars("train", losses, global_step=step_id)
+#                        self.writer.add_scalars(
+#                            "test", test_losses, global_step=step_id
+#                        )
                         print("*** Eval:", "E", epoch, "B", batch, test_loss_str, " lr")
 
                     if batch % self.save_interval == 0 and (epoch > 0 or batch > 0):

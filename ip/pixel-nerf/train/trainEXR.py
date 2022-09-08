@@ -1,6 +1,7 @@
 # Training to a set of multiple objects (e.g. ShapeNet or DTU)
 # tensorboard logs available in logs/<expname>
 
+from email.mime import image
 import sys
 import os
 
@@ -55,7 +56,7 @@ def extra_args(parser):
 args, conf = util.args.parse_args(extra_args, training=True, default_ray_batch_size=128)
 device = util.get_cuda(args.gpu_id[0])
 
-dset, val_dset, _ = get_split_dataset(args.dataset_format, args.datadir, want_split="all", training=True, ndc = False)
+dset, val_dset, _ = get_split_dataset(args.dataset_format, args.datadir, want_split="all", training=True, ndc = False, exr = True)
 print(
     "dset z_near {}, z_far {}, lindisp {}".format(dset.z_near, dset.z_far, dset.lindisp)
 )
@@ -121,6 +122,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
         SB, NV, _, H, W = all_images.shape
         all_poses = data["poses"].to(device=device)  # (SB, NV, 4, 4)
         all_bboxes = None #data.get("bbox")  # (SB, NV, 4)  cmin rmin cmax rmax
+        all_gts = data["masks"]
         all_focals = data["focal"]  # (SB)
         all_c = data.get("c")  # (SB)
 
@@ -130,6 +132,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
 
         if not is_train or not self.use_bbox:
             all_bboxes = None
+        
 
         all_rgb_gt = []
         all_rays = []
@@ -156,7 +159,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
             images_0to1 = images * 0.5 + 0.5
 
             cam_rays = util.gen_rays(
-                poses, W, H, focal, self.z_near, self.z_far, c=c, ndc=False
+                poses, W, H, focal, self.z_near, self.z_far, c=c
             )  # (NV, H, W, 8)
             rgb_gt_all = images_0to1
             rgb_gt_all = (
@@ -233,8 +236,11 @@ class PixelNeRFTrainer(trainlib.Trainer):
         else:
             batch_idx = idx
         images = data["images"][batch_idx].to(device=device)  # (NV, 3, H, W)
+        ground_truths = data["masks"][batch_idx].to(device=device)  # (NV, 3, H, W)
         poses = data["poses"][batch_idx].to(device=device)  # (NV, 4, 4)
         focal = data["focal"][batch_idx : batch_idx + 1]  # (1)
+#        for i in range(len(poses)):
+#            poses[i][:3, 3] = poses[i][:3, 3] / 50
         c = data.get("c")
         if c is not None:
             c = c[batch_idx : batch_idx + 1]  # (1)
@@ -314,6 +320,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
                 )
             )
             depth_fine_cmap = util.cmap(depth_fine_np) / 255
+#            print("DEPTH FINE NP is:",depth_fine_np)
             alpha_fine_cmap = util.cmap(alpha_fine_np) / 255
             vis_list = [
                 *source_views,
@@ -326,11 +333,26 @@ class PixelNeRFTrainer(trainlib.Trainer):
             vis_fine = np.hstack(vis_list)
             vis = np.vstack((vis_coarse, vis_fine))
             rgb_psnr = rgb_fine_np
+            depth_psnr = depth_fine_np
         else:
             rgb_psnr = rgb_coarse_np
+            depth_psnr = depth_coarse_np
 
-        psnr = util.psnr(rgb_psnr, gt)
+        psnr = util.psnr(rgb_psnr, gt)  
+        
+
+        print(torch.max(ground_truths), torch.min(ground_truths))
+        print(depth_coarse_np.max(), depth_coarse_np.min())
+        gt_psnr = max(util.psnr(depth_fine_np, ground_truths[0].cpu().detach().numpy()), 
+                        util.psnr(depth_fine_np, ground_truths[1].cpu().detach().numpy()))
+        print("DFN:",depth_fine_np)
+        print("ground:",ground_truths)
+        print("DFN:",len(depth_fine_np), len(depth_fine_np[0]))
+        print("ground:",ground_truths.size())
+        #vals = {"psnr": psnr, "gt_psnr" : gt_psnr}
         vals = {"psnr": psnr}
+        print("psnr", psnr)
+        print("gt_psnr", gt_psnr)
 
         # set the renderer network back to train mode
         renderer.train()

@@ -165,14 +165,11 @@ class PixelNeRFTrainer(trainlib.Trainer):
 
             if all_bboxes is not None:
                 pix = util.bbox_sample_adj(bboxes, args.ray_batch_size)
-                print("PIX IS",pix)
                 pix_inds = pix[..., 0] * H * W + pix[..., 1] * W + pix[..., 2]
                 pix_inds = pix_inds.to(dtype = torch.long)
             else:
                 pix_inds = torch.randint(0, NV * H * W, (args.ray_batch_size,))
 
-            print("PX is:", pix_inds)
-            print("CR is:", cam_rays.size())
             rgb_gt = rgb_gt_all[pix_inds]  # (ray_batch_size, 3)
             rays = cam_rays.view(-1, cam_rays.shape[-1])[pix_inds].to(
                 device=device
