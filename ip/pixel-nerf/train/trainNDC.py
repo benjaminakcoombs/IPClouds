@@ -55,7 +55,7 @@ def extra_args(parser):
 args, conf = util.args.parse_args(extra_args, training=True, default_ray_batch_size=128)
 device = util.get_cuda(args.gpu_id[0])
 
-dset, val_dset, _ = get_split_dataset(args.dataset_format, args.datadir, want_split="all", training=True, ndc = True)
+dset, val_dset, _ = get_split_dataset(args.dataset_format, args.datadir, want_split="all", training=True, ndc = False)
 print(
     "dset z_near {}, z_far {}, lindisp {}".format(dset.z_near, dset.z_far, dset.lindisp)
 )
@@ -156,7 +156,7 @@ class PixelNeRFTrainer(trainlib.Trainer):
             images_0to1 = images * 0.5 + 0.5
 
             cam_rays = util.gen_rays(
-                poses, W, H, focal, self.z_near, self.z_far, c=c, ndc=True
+                poses, W, H, focal, self.z_near, self.z_far, c=c, ndc=False
             )  # (NV, H, W, 8)
             rgb_gt_all = images_0to1
             rgb_gt_all = (
@@ -331,7 +331,6 @@ class PixelNeRFTrainer(trainlib.Trainer):
 
         psnr = util.psnr(rgb_psnr, gt)
         vals = {"psnr": psnr}
-        print("psnr", psnr)
 
         # set the renderer network back to train mode
         renderer.train()
