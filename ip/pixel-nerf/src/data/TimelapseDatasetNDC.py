@@ -141,7 +141,7 @@ def convert_from_homogenous_to_ndc(pose, z_near, z_far, width, height):
     Yc = Zv*Yv / (Hvp / 2)
     Zc = (Zv - Nv)/(Fv + Nv) + Nv
     Wc = Zv
-    
+
     pose[3, 0] = Xc / Wc #Convert to NDC space
     pose[3, 1] = Yc / Wc
     pose[3, 2] = Zc / Wc
